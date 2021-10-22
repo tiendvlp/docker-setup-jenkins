@@ -3,8 +3,8 @@ jenkins:
     local:
       allowsSignup: false
       users:
-       - id: ${JENKINS_ADMIN_ID}
-         password: ${JENKINS_ADMIN_PASSWORD}
+       - id: ${ADMIN_ID}
+         password: ${ADMIN_PASSWORD}
   authorizationStrategy:
     globalMatrix:
       permissions:
@@ -19,5 +19,5 @@ security:
         strategy: triggeringUsersAuthorizationStrategy
 unclassified:
   location:
-    url: http://slimair.cool:8083/
+    url: ${HOST_URL}
 
