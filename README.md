@@ -12,7 +12,7 @@ Use this id to edit the dockerfile
     cd jenkins-docker
     docker build -t jenkins-docker .
 ### 3. RUN CONTAINER
-    docker run --env JENKINS_ADMIN_ID=admin --env JENKINS_ADMIN_PASSWORD=password -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins -d jenkins-docker
+    docker run --env ADMIN_ID=admin --env ADMIN_PASSWORD=password --env HOST_URL=localhost:8083 -p 8083:8080 -p 50000:50000 -v /jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins -d -u root jenkins-docker
 
 ## 4. GIVE PERMISSION
     ls -ahl /var/run/docker.sock
