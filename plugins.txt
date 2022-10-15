@@ -1,4 +1,3 @@
-docker-workflow:1.28
 ant:475.vf34069fef73c
 antisamy-markup-formatter:2.7
 build-timeout:1.21
