@@ -1,11 +1,10 @@
 ant:481.v7b_09e538fcca
 antisamy-markup-formatter:2.7
-build-timeout:1.21
-cloudbees-folder:6.722.v8165b_a_cf25e9
-configuration-as-code:1429.v09b_044a_c93de
-credentials-binding:523.vd859a_4b_122e6
-email-ext:2.88
-git:4.11.3
+build-timeout:1.24
+cloudbees-folder:6.770.ve57b_a_fb_6a_67c
+configuration-as-code:1512.vb_79d418d5fc8
+credentials-binding:523.vd859a_4b_122e6email-ext:2.88
+git:4.12.1
 github-branch-source:1637.vd833b_7ca_7654
 gradle:1.38
 ldap:2.10
