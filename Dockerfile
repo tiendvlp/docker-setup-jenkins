@@ -33,6 +33,6 @@ RUN dotnet --version
 
 RUN dotnet tool install -g dotnet-ef
 ENV PATH=${PATH}:/root/.dotnet/tools
-RUN dotnet ef --version
+RUN dotnet ef --version 5.0
 
 USER jenkins
