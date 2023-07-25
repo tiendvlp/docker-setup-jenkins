@@ -12,8 +12,7 @@ ENV JENKINS_HOME /var/jenkins_home
 #RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 # COPY jenkins.yaml /var/jenkins_conf/jenkins.yaml
 
-RUN sed -i 's/debian/ubuntu/g' /etc/apt/sources.list.d/docker.list \
-  && apt-get update \
+RUN apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
