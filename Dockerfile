@@ -1,4 +1,4 @@
-FROM jenkins:2.6.0
+FROM jenkins:2.60.3
 
 USER root
 # ENV CURL_OPTIONS -sSfL --http1.1
