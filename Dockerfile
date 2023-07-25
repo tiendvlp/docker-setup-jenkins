@@ -1,13 +1,13 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:2.6.0
 
 USER root
-ENV CURL_OPTIONS -sSfL --http1.1
-ENV CURL_CONNECTION_TIMEOUT 60
+# ENV CURL_OPTIONS -sSfL --http1.1
+# ENV CURL_CONNECTION_TIMEOUT 60
 ENV DOCKER_ID=999
 ENV ADMIN_ID='admin'
 ENV JENKINS_HOME /var/jenkins_home
-ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
-ENV CASC_JENKINS_CONFIG /var/jenkins_conf
+# ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
+# ENV CASC_JENKINS_CONFIG /var/jenkins_conf
 # COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 #RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 # COPY jenkins.yaml /var/jenkins_conf/jenkins.yaml
